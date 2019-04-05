@@ -3,7 +3,14 @@ import React from 'react';
 class Header extends React.Component{
   render(){
     return(
-      <h1>Header</h1>
+      <header>
+        <h1>Know Your Vote</h1>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+            </ul>
+          </nav>
+      </header>
     );
   }
 }
