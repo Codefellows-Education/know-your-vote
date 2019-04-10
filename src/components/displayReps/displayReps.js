@@ -1,6 +1,7 @@
 import React from 'react';
 import superagent from 'superagent';
 import IndividualRep from '../individualRep/individualRep';
+import ChartJS from '../ChartJS/ChartJS';
 
 class DisplayReps extends React.Component{
   constructor(props){
@@ -51,6 +52,7 @@ class DisplayReps extends React.Component{
           </ul>
         </section>
         <IndividualRep contributors={this.state.contributors} voting={this.state.voting} />
+        <ChartJS contributors={this.state.contributors} voting={this.state.voting} />
       </>
     );
   }

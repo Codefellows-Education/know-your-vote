@@ -1,9 +1,17 @@
 import React from 'react';
 
+
 class IndividualRep extends React.Component {
   render(){
     return (
-      <h2>I am an IndividualRep</h2>
+      <>
+        <h2>I am an IndividualRep</h2>
+        <div>
+          {this.props.contributors.map((contributor, index) => (
+            <p key={index}>{contributor.name}</p>
+          ))};
+        </div>
+      </>
     )
   }
 }
