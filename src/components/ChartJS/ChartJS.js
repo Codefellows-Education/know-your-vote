@@ -1,3 +1,4 @@
+import './individualRep.scss';
 import React from 'react';
 const ChartJs = require("chart.js");
 
@@ -71,23 +72,25 @@ class Chart extends React.Component{
         <canvas id="my-chart-funding"></canvas>
         
         <h2>How Did My Representative Vote?</h2>
-        <div id="yes">
-          <h3>YES</h3>
-          {positions.yes.map((description, i)=> (
-            <p key={i}>{description}</p>
-          ))}
-        </div>
-        <div id="no">
-          <h3>NO</h3>
-          {positions.no.map((description, i)=> (
-            <p key={i}>{description}</p>
-          ))}
-        </div>
-        <div id="other">
-          <h3>PRESENT</h3>
-          {positions.other.map((description, i)=> (
-            <p key={i}>{description}</p>
-          ))}
+        <div id="voting">
+          <div id="yes">
+            <h3>YES</h3>
+            {positions.yes.map((description, i)=> (
+              <p key={i}>{description}</p>
+            ))}
+          </div>
+          <div id="no">
+            <h3>NO</h3>
+            {positions.no.map((description, i)=> (
+              <p key={i}>{description}</p>
+            ))}
+          </div>
+          <div id="other">
+            <h3>PRESENT</h3>
+            {positions.other.map((description, i)=> (
+              <p key={i}>{description}</p>
+            ))}
+          </div>
         </div>
       </>
     );

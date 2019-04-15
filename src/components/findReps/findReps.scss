@@ -8,6 +8,7 @@
   margin: auto;
   padding-bottom: 2em;
   text-align: center;
+  background-color: rgba(240, 244, 249, .5);
 
   fieldset {
     legend {
@@ -23,7 +24,7 @@
       border: 1px lightgray double;
       box-shadow: 0px -1px 3px 0px;;
       display: block;
-      width: 60%;
+      max-width: 60%;
       margin: auto;
       margin-top: 2em;
     }
@@ -40,7 +41,7 @@
       font-size: 20px;
       font-weight: bold;
       padding: 2px 10px;
-      width: 378px;
+      max-width: 378px;
       margin: auto;
       margin-top: 1.5em;
       margin-bottom: 1.5em;
