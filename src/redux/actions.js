@@ -16,11 +16,11 @@ export const showRepFunction = (repValue) => {
   }
 }
 
-export const repIDFunction = (id) => {
-  console.log('the rep id in actions is ,', id);
+export const repFunction = (rep) => {
+  console.log('the rep in actions is ,', rep);
   return {
     type: 'CHOSENREP',
-    payload: { repID: id }
+    payload: { rep: rep }
   }
 }
 

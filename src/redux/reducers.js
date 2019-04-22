@@ -1,7 +1,7 @@
 let initialState = {
   showReps: false,
   showRep: false,
-  repID: '',
+  rep: {},
   showSearch: true
 };
 
@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
       return { ...state, showRep: payload.showRep };
 
     case "CHOSENREP":
-      return { ...state, repID: payload.repID };
+      return { ...state, rep: payload.rep };
 
     case "SHOWSEARCH":
       return { ...state, showSearch: payload.showSearch };

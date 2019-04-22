@@ -6,7 +6,7 @@ import './displayReps.scss';
 
 class DisplayReps extends React.Component{
   
-  handleRepClick = async(repID) => {
+  handleRepClick = async(repID, rep) => {
     console.log('my rep id is ', repID);
     let URL = 'http://localhost:3001';
     let data = await superagent.get(`${URL}/loadrep/:id`).query({id: repID});
@@ -21,7 +21,7 @@ class DisplayReps extends React.Component{
     this.props.updateVoting(voting);
     this.props.showRepFunction(true);
     this.props.showRepsFunction(false);
-    this.props.repIDFunction(repID);
+    this.props.repFunction(rep);
   }
 
   render(){
@@ -37,7 +37,7 @@ class DisplayReps extends React.Component{
           <ul id="repsList">
             {this.props.reps.map((rep, i)=> (
               <li key={i}>
-                <button onClick={() => this.handleRepClick(rep.id)}>
+                <button onClick={() => this.handleRepClick(rep.id, rep)}>
                   <h3 className="name">{rep.name}</h3>
                   <img src={rep.img_url} alt={rep.name} />
                   <p className="office">{rep.officialOffice}</p>
@@ -58,13 +58,13 @@ class DisplayReps extends React.Component{
 const mapStateToProps = state => ({
   showRep: state.data.showRep,
   showReps: state.data.showReps,
-  repID: state.data.repID
+  rep: state.data.rep
 });
 
 const mapDispatchToProps = (dispatch, getState) => ({
   showRepFunction: (boo) => dispatch(actions.showRepFunction(boo)),
   showRepsFunction: (boo) => dispatch(actions.showRepsFunction(boo)),
-  repIDFunction: (id) => dispatch(actions.repIDFunction(id))
+  repFunction: (rep) => dispatch(actions.repFunction(rep))
 });
 
 export default connect(
