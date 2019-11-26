@@ -20,14 +20,14 @@
     padding: 1em;
   }
 
-  #repsList {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+}
 
-  ul {
+ul#repsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
     li {
       max-width: 14em;
 
@@ -54,5 +54,4 @@
         }
       }
     }
-  }
 }

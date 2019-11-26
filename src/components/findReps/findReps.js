@@ -11,7 +11,6 @@ class FindReps extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      district: {},
       reps: [], 
       contributors: [],
       voting: []
@@ -26,15 +25,13 @@ class FindReps extends React.Component{
     let state = e.target.state.value;
     let fullAddress = `${address} ${city} ${state}`;
 
-    let URL = `http://localhost:3001`
+    let URL = `https://know-your-vote-backend.herokuapp.com/`
 
     let data = await superagent.get(`${URL}/representatives`).query({address: fullAddress})
-      
+    console.log('in handle submit getting this data', data.body);
     this.props.showRepsFunction(true);
     this.props.showSearchFunction(false);
-    this.setState({ district: data.body.value.district });
-    this.setState({ reps: data.body.value.reps });
-    console.log('in handle submit getting this data', data.body.value);
+    this.setState({ reps: data.body });
     console.log('the showReps is ', this.props.showReps);
 
   }
@@ -122,7 +119,7 @@ class FindReps extends React.Component{
           </section>
         </If>
         <If condition={this.props.showReps}>
-          <DisplayReps updateContributors={this.handleUpdateContributors} updateVoting={this.handleUpdateVoting} district={this.state.district} reps={this.state.reps} />
+          <DisplayReps updateContributors={this.handleUpdateContributors} updateVoting={this.handleUpdateVoting} reps={this.state.reps} />
         </If>
         <If condition={this.props.showRep}>
           <ChartJS repID={this.props.repID} contributors={this.state.contributors} voting={this.state.voting} />
