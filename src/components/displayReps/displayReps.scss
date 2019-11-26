@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); 
+
+#display-reps{
+  #district{
+    padding: 1em;
+    text-align: center;
+    
+    p {
+      border: 2px solid gray;
+      padding: 1em;
+      display: inline;
+      margin: 0 1em;
+    }
+  }
+
+  h2{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 1em;
+  }
+
+}
+
+ul#repsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+    li {
+      max-width: 14em;
+
+      img {
+        max-width: 20em;
+      }
+
+      h3 {
+        padding: 1em;
+      }
+
+      p{
+        text-align: center;
+        margin: 1em;
+        margin-top: .4em;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            color: gray;
+          }
+        }
+      }
+    }
+}

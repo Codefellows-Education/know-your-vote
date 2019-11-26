@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat'); 
+
+#myRep {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+
+  img {
+    border: 2px solid gray;
+    max-width: 20em;
+  }
+
+  h3 {
+    padding: 1em;
+  }
+}
+
+canvas {
+  background-color: rgba(254, 254, 254, .8);
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+  font-family: Montserrat;
+  padding: 1em;
+  background-color: rgba(254, 254, 254, .8);
+}
+
+#voting {
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: .2em;
+  background-color: rgba(254, 254, 254, .8);
+
+  #yes {
+    h3 {
+      padding-bottom: 1em;
+      border-bottom: 1px solid gray;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1em;
+    }
+
+    border: 2px solid gray;
+    padding: 1em;
+    margin: 0 .2em;
+    max-width: 20em;
+  }
+
+  #no {
+    h3 {
+      padding-bottom: 1em;
+      border-bottom: 1px solid gray;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1em;
+    }
+
+    border: 2px solid gray;
+    padding: 1em;
+    margin: 0 .2em;
+    max-width: 20em;
+  }
+
+  #other {
+    h3 {
+      padding-bottom: 1em;
+      border-bottom: 1px solid gray;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 1em;
+    }
+
+    border: 2px solid gray;
+    padding: 1em;
+    margin: 0 .2em;
+    max-width: 20em;
+  }
+}

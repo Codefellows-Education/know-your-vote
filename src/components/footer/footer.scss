@@ -1,0 +1,16 @@
+footer {
+  text-align: center;
+  font-size: .6em;
+  position: fixed;
+  bottom: 1em;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      color: darkgray;
+    }
+  }
+}
