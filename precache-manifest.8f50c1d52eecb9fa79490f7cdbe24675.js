@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/know-your-vote/static/js/runtime~main.66d25ea1.js"
   },
   {
-    "revision": "a782b9ad9a5df93cf2fa",
+    "revision": "fc03ff78d53af7428294",
     "url": "/know-your-vote/static/js/main.d4e64409.chunk.js"
   },
   {
@@ -16,11 +16,11 @@ self.__precacheManifest = [
     "url": "/know-your-vote/static/js/2.d5669982.chunk.js"
   },
   {
-    "revision": "a782b9ad9a5df93cf2fa",
-    "url": "/know-your-vote/static/css/main.1bf39269.chunk.css"
+    "revision": "fc03ff78d53af7428294",
+    "url": "/know-your-vote/static/css/main.b91816b5.chunk.css"
   },
   {
-    "revision": "761524be127b275803124b1ca247e4ff",
+    "revision": "494b24c203eb8e02a4454f8dc741f8f8",
     "url": "/know-your-vote/index.html"
   }
 ];
