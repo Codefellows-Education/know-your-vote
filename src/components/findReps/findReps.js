@@ -25,7 +25,7 @@ class FindReps extends React.Component{
     let state = e.target.state.value;
     let fullAddress = `${address} ${city} ${state}`;
 
-    let URL = `https://know-your-vote-backend.herokuapp.com`
+    let URL = `https://know-your-vote-backend.herokuapp.com`;
 
     let data = await superagent.get(`${URL}/representatives`).query({address: fullAddress})
     console.log('in handle submit getting this data', data.body);
