@@ -8,7 +8,7 @@ class DisplayReps extends React.Component{
   
   handleRepClick = async(repID, rep) => {
     console.log('my rep id is ', repID);
-    let URL = 'https://know-your-vote-backend.herokuapp.com/';
+    let URL = 'https://know-your-vote-backend.herokuapp.com';
     let data = await superagent.get(`${URL}/loadrep/:id`).query({name: rep.name});
 
     let something = data.body.value;
