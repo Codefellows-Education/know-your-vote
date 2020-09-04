@@ -7,7 +7,7 @@
     "chart.js": "2.8.0",
     "cors": "2.8.5",
     "gh-pages": "2.1.1",
-    "node-sass": "4.11.0",
+    "node-sass": "4.13.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "7.0.1",
